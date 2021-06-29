@@ -53,7 +53,7 @@ def get_one_board(board_id):
         return board.to_json_board(), 200
 
 
-@gboard_bp.route("<board_id>", methods=["DELETE"], strict_slashes=False)
+@board_bp.route("<board_id>", methods=["DELETE"], strict_slashes=False)
 def delete_board(board_id):
 
     board = Board.query.get(board_id)

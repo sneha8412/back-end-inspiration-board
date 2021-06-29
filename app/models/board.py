@@ -3,7 +3,7 @@ from flask import current_app
 
 class Board(db.Model):
     board_id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    title = db.Colum(db.String)
+    title = db.Column(db.String)
 
     def to_json_board(self):
 
