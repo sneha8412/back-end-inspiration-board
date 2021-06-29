@@ -10,7 +10,7 @@ board_bp = Blueprint("boards", __name__, url_prefix="/boards")
 
 @board_bp.route("", methods=["POST"], strict_slashes=False)
 def create_a_board():
-    request_body = request.ge.json()
+    request_body = request.get.json()
 
     if "title" not in request_body:
         return jsonify(details="invalid data"), 400
