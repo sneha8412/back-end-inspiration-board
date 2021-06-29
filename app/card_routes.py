@@ -26,11 +26,13 @@ def create_a_card():
 def delete_a_card():
     pass
 
-@card_bp.route("", methods=["LIKE"], strict_slashes=False)
-def like_a_card():
-    pass
+#update a card
+# @card_bp.route("", methods=["PUT"], strict_slashes=False)
+# def like_a_card():
+#     pass
 
 
 @card_bp.route("", methods=["GET"], strict_slashes=False)
 def get_all_cards():
     pass
+
